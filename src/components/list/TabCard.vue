@@ -17,7 +17,7 @@ const closeTab = () => {
   <a :href="url" target="_blank">
     <div id="background">
       <div id="tab-image">
-        <img :src="img" alt="Tab Image" v-if="loaded" />
+        <img :src="img" alt="img" v-if="loaded" />
       </div>
       <div id="tab-info">
         <h3>{{ title }}</h3>
@@ -36,11 +36,13 @@ div#background {
   justify-content: space-between;
   padding: var(--padding-primary);
   border-radius: var(--radius-primary);
-  background-color: var(--color-background);
+  background-color: var(--color-background-soft);
 }
 div#background:hover{
   border: 1px solid #ccc;
-
+}
+div#background:hover div#tab-info p {
+  display: block;
 }
 
 a {
@@ -58,6 +60,7 @@ a {
 }
 
 #tab-info p {
+  display: none;
   color: var(--color-subtext);
   font-size: x-small;
 }
@@ -70,6 +73,7 @@ a {
 div#closeTab {
   cursor: pointer;
   text-align: center;
+  line-height: 30px;
   width: 35px;
   color: var(--danger-primary);
   padding: var(--padding-secondary);
