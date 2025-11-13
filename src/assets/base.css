@@ -19,6 +19,15 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+  --danger-primary: #ff4747;
+  --success-primary: #4caf50;
+
+  --padding-primary: 5px;
+  --padding-secondary: calc(0.5*var(--padding-primary));
+
+  --radius-primary: calc(3*var(--padding-primary));
+  --radius-secondary: calc(0.5*var(--radius-primary));
 }
 
 /* semantic color variables for this project */
@@ -32,6 +41,7 @@
 
   --color-heading: var(--vt-c-text-light-1);
   --color-text: var(--vt-c-text-light-1);
+  --color-subtext: var(--vt-c-text-dark-2);
 
   --section-gap: 160px;
 }
