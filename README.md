@@ -41,6 +41,8 @@ yarn dev
 yarn build
 ```
 
+### Use Vue stores with [Pinia](https://pinia.vuejs.org/)
+
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
 
 ```sh
